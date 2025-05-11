@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 15vh;
+  border-bottom: 0.5px solid rgb(67, 67, 67);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-title p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.nav-btn .btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* Section 2 */
+.sec-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sec-2-left,
+.sec-2-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.sec-2-left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sec-2-right .title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.sec-2-right .body-describe {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.sec-2-right .body-btn {
+  display: flex;
+  gap: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-divs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-divs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-divs ul li {
+  margin: 5px 0;
+}
+
+.footer-divs svg {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer hr {
+  width: 100%;
+  border: 0.5px solid gray;
+  margin: 10px 0;
+}
+
+@media (max-width: 890px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .sec-2-left img{
+    width: 100%;
+  }
+  .nav-title p {
+    font-size: 1.2rem;
+  }
+
+  .nav-btn .btn {
+    display: none;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .sec-2 {
+    flex-direction: column;
+  }
+
+  .sec-2-right .title {
+    font-size: 1.5rem;
+  }
+
+  .sec-2-right .body-describe {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  .footer-divs svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sec-2-left img {
+    max-width: 100%;
+  }
+
+  .sec-2-right .title {
+    font-size: 1.2rem;
+  }
+
+  .sec-2-right .body-describe {
+    font-size: 0.8rem;
+  }
+
+  .nav-btn .btn {
+    display: none;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+  .body-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer hr {
+    margin: 5px 0;
+  }
+}
+
+
+
+
+
+
+/* sing in page style */
+.sign-in-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120vh;
+  width: 100%;
+}
+.sign-in-sec-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  /* height: 100vh; */
+  input {
+    background: #121212;
+    color: white;
+  }
+  label {
+    color: white;
+  }
+}
+.form-container {
+  width: 80%;
+  border: 1px solid white;
+  padding: 2%;
+  border-radius: 10px;
+
+}
+.signin-form {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.Sign-in-title {
+  color: goldenrod;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  font-style: normal;
+  text-align: center;
+}
+.inputs {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-feilds {
+  width: 80%;
+  /* gap: 4%; */
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: start;
+  margin: 1%;
+  input {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 6vh;
+    width: 100%;
+  }
+  .span {
+    font-size: x-small;
+    text-align: start;
+    margin-top: 1%;
+    color: gray;
+  }
+  .sign-in-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+  }
+}
+.sign-in-sec-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        border: 15px solid goldenrod;
+    }
+}
+.have-account{
+    font-size: small;
+}
+button:hover{
+    color: black;
+    border: 1px solid black;
+}
+.footer-titel{
+    p {
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 400;
+        font-size: large;
+        font-style: normal;
+        margin-top: 0%;
+        margin-bottom: 0%;
+      }
+}
+@media (max-width: 890px) {
+  .sign-in-sec{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .sign-in-sec-left{
+    width: 100%;
+    
+  }
+  input{
+    height: auto;
+  }
+  img{
+    display: none;
+  }
+}
+
+
+
+
+/* login style */
+
+.log-in-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+.log-in-sec-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  /* height: 100vh; */
+  input {
+    background: #121212;
+    color: white;
+  }
+  label {
+    color: white;
+  }
+}
+.login-form-container {
+  width: 80%;
+  border: 1px solid white;
+  padding: 2%;
+  border-radius: 10px;
+
+}
+.login-form {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+.log-in-title {
+  color: goldenrod;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  font-style: normal;
+  text-align: center;
+}
+.login-inputs {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-input-feilds {
+  width: 80%;
+  /* gap: 4%; */
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: start;
+  margin: 1%;
+  input {
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 6vh;
+    width: 100%;
+  }
+  .span {
+    font-size: x-small;
+    text-align: start;
+    margin-top: 1%;
+    color: gray;
+  }
+  .log-in-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+  }
+}
+.log-in-sec-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        border: 15px solid goldenrod;
+    }
+}
+.have-account{
+    font-size: small;
+}
+button:hover{
+    color: black;
+    border: 1px solid black;
+}
+.footer-titel{
+    p {
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 400;
+        font-size: large;
+        font-style: normal;
+        margin-top: 0%;
+        margin-bottom: 0%;  
+      }
+}

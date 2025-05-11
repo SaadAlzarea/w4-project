@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  /* width: 100%; */
+}
+.nav-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 4vw;
+  list-style-type: none;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  img{
+    border-radius: 50%;
+  }
+}
+
+.profile-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  border: 1px solid rgb(67, 67, 67);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 40%;
+  /* background-color: rgba(218, 165, 32, 0.1); */
+  border-right: 1px solid goldenrod;
+  padding: 2rem;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid goldenrod;
+}
+
+.profile-info-section {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.profile-name {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 2.5rem;
+  color: goldenrod;
+  margin-bottom: 0.5rem;
+}
+
+.profile-username {
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  color: goldenrod;
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgb(67, 67, 67);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.info-label {
+  width: 180px;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.info-value {
+  flex: 1;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.btn-goldenrod {
+  background-color: goldenrod;
+  color: black;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.btn-goldenrod:hover {
+  background-color: rgba(218, 165, 32, 0.8);
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-top: 1px solid rgb(67, 67, 67);
+  padding: 0 2rem;
+}
+
+.footer-titel p {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}

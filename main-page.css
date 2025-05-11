@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: #121212;
+  color: white;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  /* width: 100%; */
+}
+.nav-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 4vw;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  img{
+    border-radius: 50%;
+  }
+}
+.nav-title{
+  width: 35%;
+  text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.main-sec-1 {
+  margin: 2%;
+}
+.hesder {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+  .history {
+    font-size: 0.9em;
+    color: goldenrod;
+  }
+}
+.introduction {
+  font-size: larger;
+  text-align: justify;
+  margin: 2%;
+}
+.states-titel {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  font-style: normal;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: xx-large;
+  /* color: rgb(158, 222, 158); */
+}
+.card-1 {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 2%;
+}
+.states-1 {
+  /* background: rgb(46, 40, 27); */
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  border-bottom: 1px solid white;
+  padding: 1%;
+  /* border-radius: 10px; */
+  img {
+    width: 60%;
+  }
+}
+.info-border {
+  background: rgb(87, 72, 36);
+}
+.states-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  width: 60%;
+  height: 35vh;
+}
+.states-title {
+  color: rgb(158, 222, 158);
+  font-size: xx-large;
+  font-weight: bold;
+}
+.number {
+  color: rgb(216, 176, 75);
+}
+.duration {
+  color: rgb(158, 222, 158);
+  font-size: xx-large;
+  /* font-weight: bold; */
+}
+.img1 {
+  width: 40%;
+}
+
+.states-1-kings {
+  margin: 2%;
+}
+.faund-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3em;
+  font-weight: bold;
+  border-left: 3px solid goldenrod;
+  width: 100%;
+  padding-left: 1%;
+  background: rgb(87, 72, 36);
+  border-radius: 10px;
+  text-align: center;
+}
+.item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style-type: none;
+  margin: 1%;
+  font-size: 1.3em;
+  img{
+    border: 5px solid goldenrod;
+  }
+}
+.item11{
+    font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  
+}
+.item22{
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: goldenrod;
+}
+.item33{
+    font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: goldenrod;
+}
+
+ul{
+  list-style-type: none;
+}
+footer {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-divs {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.footer-divs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-divs ul li {
+  margin: 5px 0;
+}
+
+.footer-divs svg {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer hr {
+  width: 100%;
+  border: 0.5px solid gray;
+  margin: 10px 0;
+} 
+.footer-titel{
+    p {
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 400;
+        font-size: large;
+        font-style: normal;
+        margin-top: 0%;
+        margin-bottom: 0%;  
+      }
+}
+@media (max-width: 890px) {
+
+  .nav-item{
+    display: none
+  }
+  .hesder {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+  .history {
+    font-size: 0.9em;
+    color: goldenrod;
+  }
+}
+.introduction {
+  font-size: medium;
+  text-align: justify;
+  margin: 2%;
+}
+
+.states-titel {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  font-style: normal;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  /* font-size: xx-large; */
+  /* color: rgb(158, 222, 158); */
+}
+.states-1 {
+  /* background: rgb(46, 40, 27); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 1%;
+  /* border-radius: 10px; */
+  img {
+    width: 100%;
+  }
+}
+.states-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  width: 100%;
+  height: 35vh;
+}
+.img1 {
+  width: 40%;
+  margin-bottom: 2%;
+}
+
+.faund-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  border-left: 3px solid goldenrod;
+  width: 100%;
+  padding-left: 1%;
+  background: rgb(87, 72, 36);
+  border-radius: 10px;
+  text-align: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  margin: 1%;
+  font-size: 1em;
+  img{
+    border: 5px solid goldenrod;
+  }
+}
+
+.item11{
+    font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+  width: 100%;
+}
+.item22{
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 0.7em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: goldenrod;
+  text-align: center;
+
+}
+.item33{
+    font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: goldenrod;
+  text-align: center;
+
+}
+.footer-divs  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+}
